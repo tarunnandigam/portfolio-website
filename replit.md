@@ -90,6 +90,15 @@ This is a personal portfolio website for Tarun Nandigam, a Computer Science Engi
 - **`pyproject.toml`**: Python project metadata and dependencies
 - **`uv.lock`**: Lock file for reproducible dependency installation
 
+## Recent Changes
+
+- June 27, 2025: Enhanced mobile responsiveness for About Me section
+  - Added tablet breakpoint (992px) with optimized 2-column layout
+  - Improved mobile layout with single-column responsive grid
+  - Optimized spacing, font sizes, and element sizing for mobile devices
+  - Fixed skills grid layout for better mobile display
+  - Enhanced button and icon sizing for touch interfaces
+
 ## Changelog
 
 - June 27, 2025. Initial setup
