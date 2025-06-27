@@ -14,7 +14,9 @@ const projectsData = [
             "Responsive design for all devices"
         ],
         challenges: "Implementing secure payment processing and managing complex state across multiple components.",
-        learnings: "Gained deep understanding of full-stack development, database design, and secure coding practices."
+        learnings: "Gained deep understanding of full-stack development, database design, and secure coding practices.",
+        github: "https://github.com/tarunnandigam/ecommerce-platform",
+        website: "https://ecommerce-demo.tarunnandigam.com"
     },
     {
         title: "AI Chatbot Assistant",
@@ -30,7 +32,9 @@ const projectsData = [
             "Easy integration with web applications"
         ],
         challenges: "Training the model to understand context and provide relevant responses while handling edge cases.",
-        learnings: "Developed expertise in NLP, machine learning model training, and API integration."
+        learnings: "Developed expertise in NLP, machine learning model training, and API integration.",
+        github: "https://github.com/tarunnandigam/ai-chatbot",
+        website: "https://chatbot-demo.tarunnandigam.com"
     },
     {
         title: "Task Management System",
@@ -47,7 +51,9 @@ const projectsData = [
             "Time tracking and reporting"
         ],
         challenges: "Implementing real-time synchronization across multiple users and handling concurrent data updates.",
-        learnings: "Mastered real-time web technologies, database optimization, and collaborative software design patterns."
+        learnings: "Mastered real-time web technologies, database optimization, and collaborative software design patterns.",
+        github: "https://github.com/tarunnandigam/task-management",
+        website: "https://taskmanager-demo.tarunnandigam.com"
     },
     {
         title: "Weather Dashboard",
@@ -63,7 +69,9 @@ const projectsData = [
             "Mobile-responsive design"
         ],
         challenges: "Handling multiple API integrations and managing asynchronous data updates while maintaining smooth user experience.",
-        learnings: "Mastered API integration, data visualization with charts, and responsive web design principles."
+        learnings: "Mastered API integration, data visualization with charts, and responsive web design principles.",
+        github: "https://github.com/tarunnandigam/weather-dashboard",
+        website: "https://weather-app.tarunnandigam.com"
     },
     {
         title: "Portfolio Website",
@@ -79,7 +87,9 @@ const projectsData = [
             "SEO-optimized structure"
         ],
         challenges: "Creating a balance between visual appeal and performance while ensuring cross-browser compatibility.",
-        learnings: "Enhanced understanding of web design principles, user experience, and frontend-backend integration."
+        learnings: "Enhanced understanding of web design principles, user experience, and frontend-backend integration.",
+        github: "https://github.com/tarunnandigam/portfolio-website",
+        website: "https://portfolio.tarunnandigam.com"
     },
     {
         title: "Expense Tracker",
@@ -95,7 +105,9 @@ const projectsData = [
             "Monthly and yearly spending reports"
         ],
         challenges: "Implementing real-time data synchronization and creating intuitive data visualization for financial insights.",
-        learnings: "Gained expertise in React state management, Firebase integration, and financial data visualization techniques."
+        learnings: "Gained expertise in React state management, Firebase integration, and financial data visualization techniques.",
+        github: "https://github.com/tarunnandigam/expense-tracker",
+        website: "https://expenses.tarunnandigam.com"
     }
 ];
 
@@ -175,6 +187,15 @@ function openProjectModal(projectIndex) {
             <div class="project-learnings">
                 <h3>Key Learnings</h3>
                 <p>${project.learnings}</p>
+            </div>
+            
+            <div class="project-modal-actions">
+                <a href="${project.github}" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-github"></i> View Code
+                </a>
+                <a href="${project.website}" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+                    <i class="fas fa-external-link-alt"></i> Live Demo
+                </a>
             </div>
         </div>
     `;

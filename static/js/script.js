@@ -24,7 +24,9 @@ const projectsData = [
             "Responsive design for all devices"
         ],
         challenges: "Implementing secure payment processing and managing complex state across multiple components.",
-        learnings: "Gained deep understanding of full-stack development, database design, and secure coding practices."
+        learnings: "Gained deep understanding of full-stack development, database design, and secure coding practices.",
+        github: "https://github.com/tarunnandigam/ecommerce-platform",
+        website: "https://ecommerce-demo.tarunnandigam.com"
     },
     {
         title: "AI Chatbot Assistant",
@@ -40,7 +42,9 @@ const projectsData = [
             "Easy integration with web applications"
         ],
         challenges: "Training the model to understand context and provide relevant responses while handling edge cases.",
-        learnings: "Developed expertise in NLP, machine learning model training, and API integration."
+        learnings: "Developed expertise in NLP, machine learning model training, and API integration.",
+        github: "https://github.com/tarunnandigam/ai-chatbot",
+        website: "https://chatbot-demo.tarunnandigam.com"
     },
     {
         title: "Task Management System",
@@ -57,7 +61,9 @@ const projectsData = [
             "Time tracking and reporting"
         ],
         challenges: "Implementing real-time synchronization across multiple users and handling concurrent data updates.",
-        learnings: "Mastered real-time web technologies, database optimization, and collaborative software design patterns."
+        learnings: "Mastered real-time web technologies, database optimization, and collaborative software design patterns.",
+        github: "https://github.com/tarunnandigam/task-management",
+        website: "https://taskmanager-demo.tarunnandigam.com"
     }
 ];
 
@@ -115,7 +121,6 @@ window.addEventListener('scroll', () => {
 });
 
 // Project card click handlers
-const projectCards = document.querySelectorAll('.project-card');
 projectCards.forEach((card, index) => {
     card.addEventListener('click', () => {
         openProjectModal(index);
@@ -158,10 +163,10 @@ function openProjectModal(projectIndex) {
             </div>
             
             <div class="project-modal-actions">
-                <a href="#" class="btn btn-primary" target="_blank">
+                <a href="${project.github}" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
                     <i class="fab fa-github"></i> View Code
                 </a>
-                <a href="#" class="btn btn-secondary" target="_blank">
+                <a href="${project.website}" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
                     <i class="fas fa-external-link-alt"></i> Live Demo
                 </a>
             </div>

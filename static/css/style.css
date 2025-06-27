@@ -1098,6 +1098,41 @@ html {
     display: flex;
     gap: 1rem;
     margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.project-modal-actions .btn {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.project-modal-actions .btn-primary {
+    background: var(--primary-color);
+    color: white;
+}
+
+.project-modal-actions .btn-primary:hover {
+    background: var(--primary-dark);
+    transform: translateY(-2px);
+}
+
+.project-modal-actions .btn-secondary {
+    background: var(--secondary-color);
+    color: white;
+}
+
+.project-modal-actions .btn-secondary:hover {
+    background: var(--secondary-dark);
+    transform: translateY(-2px);
 }
 
 /* Footer */
@@ -1289,6 +1324,11 @@ html {
 
     .project-modal-actions {
         flex-direction: column;
+    }
+
+    .project-modal-actions .btn {
+        padding: 0.7rem 1.2rem;
+        font-size: 0.9rem;
     }
 }
 
