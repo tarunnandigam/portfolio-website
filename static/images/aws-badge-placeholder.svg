@@ -1,0 +1,10 @@
+<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="120" height="120" rx="10" fill="#232F3E"/>
+  <rect x="10" y="10" width="100" height="100" rx="5" fill="#E5E5E5"/>
+  <text x="60" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#232F3E">AWS</text>
+  <text x="60" y="50" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#232F3E">ACADEMY</text>
+  <line x1="20" y1="55" x2="100" y2="55" stroke="#232F3E" stroke-width="1"/>
+  <text x="60" y="72" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" font-weight="bold" fill="#232F3E">Cloud</text>
+  <text x="60" y="85" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" font-weight="bold" fill="#232F3E">Foundations</text>
+  <line x1="20" y1="90" x2="100" y2="90" stroke="#232F3E" stroke-width="1"/>
+</svg>
