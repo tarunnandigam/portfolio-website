@@ -1,0 +1,127 @@
+{
+  "personal": {
+    "name": "Tarun Nandigam",
+    "title": "Computer Science Engineering Student",
+    "education": "BTech CSE - 3rd Year",
+    "location": "India",
+    "timezone": "IST (GMT+5:30)",
+    "email": "tarun.nandigam@example.com",
+    "linkedin": "https://linkedin.com/in/tarun-nandigam",
+    "github": "https://github.com/tarun-nandigam",
+    "twitter": "https://twitter.com/tarun_nandigam"
+  },
+  "skills": {
+    "programming_languages": [
+      {
+        "name": "Python",
+        "icon": "fab fa-python",
+        "proficiency": "Advanced"
+      },
+      {
+        "name": "Java",
+        "icon": "fab fa-java",
+        "proficiency": "Intermediate"
+      },
+      {
+        "name": "JavaScript",
+        "icon": "fab fa-js-square",
+        "proficiency": "Advanced"
+      },
+      {
+        "name": "C++",
+        "icon": "fas fa-code",
+        "proficiency": "Intermediate"
+      }
+    ],
+    "web_technologies": [
+      {
+        "name": "HTML5",
+        "icon": "fab fa-html5",
+        "proficiency": "Advanced"
+      },
+      {
+        "name": "CSS3",
+        "icon": "fab fa-css3-alt",
+        "proficiency": "Advanced"
+      },
+      {
+        "name": "React",
+        "icon": "fab fa-react",
+        "proficiency": "Intermediate"
+      },
+      {
+        "name": "Node.js",
+        "icon": "fab fa-node-js",
+        "proficiency": "Intermediate"
+      }
+    ],
+    "tools_databases": [
+      {
+        "name": "Git",
+        "icon": "fab fa-git-alt",
+        "proficiency": "Advanced"
+      },
+      {
+        "name": "MySQL",
+        "icon": "fas fa-database",
+        "proficiency": "Intermediate"
+      },
+      {
+        "name": "Docker",
+        "icon": "fab fa-docker",
+        "proficiency": "Beginner"
+      },
+      {
+        "name": "Linux",
+        "icon": "fab fa-linux",
+        "proficiency": "Intermediate"
+      }
+    ]
+  },
+  "projects": [
+    {
+      "id": 1,
+      "title": "E-Commerce Platform",
+      "description": "Full-stack e-commerce solution with user authentication, product catalog, and payment integration.",
+      "icon": "fas fa-shopping-cart",
+      "technologies": ["React", "Node.js", "MongoDB"],
+      "github_url": "https://github.com/tarun-nandigam/ecommerce-platform",
+      "live_url": "https://tarun-ecommerce.herokuapp.com",
+      "featured": true
+    },
+    {
+      "id": 2,
+      "title": "AI Chatbot Assistant",
+      "description": "Intelligent chatbot using natural language processing for customer support automation.",
+      "icon": "fas fa-robot",
+      "technologies": ["Python", "TensorFlow", "Flask"],
+      "github_url": "https://github.com/tarun-nandigam/ai-chatbot",
+      "live_url": "https://tarun-chatbot.herokuapp.com",
+      "featured": true
+    },
+    {
+      "id": 3,
+      "title": "Task Management System",
+      "description": "Collaborative project management tool with real-time updates and team collaboration features.",
+      "icon": "fas fa-tasks",
+      "technologies": ["Vue.js", "Express", "Socket.io"],
+      "github_url": "https://github.com/tarun-nandigam/task-manager",
+      "live_url": "https://tarun-taskmanager.herokuapp.com",
+      "featured": true
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Technology",
+      "field": "Computer Science Engineering",
+      "status": "Currently in 3rd Year",
+      "description": "Pursuing comprehensive education in computer science fundamentals, including data structures, algorithms, software engineering, and modern web technologies.",
+      "highlights": [
+        "Data Structures & Algorithms",
+        "Object-Oriented Programming",
+        "Database Management Systems",
+        "Web Development"
+      ]
+    }
+  ]
+}
