@@ -588,14 +588,6 @@ html {
     box-shadow: var(--shadow-medium);
 }
 
-.skill-category-title {
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin-bottom: 1.5rem;
-    color: var(--text-primary);
-    text-align: center;
-}
-
 .skill-badges {
     display: flex;
     flex-wrap: wrap;
@@ -629,6 +621,18 @@ html {
 .skill-badge span {
     font-weight: 500;
     color: var(--text-primary);
+}
+
+/* View All Projects Button */
+.view-all-projects {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.view-all-btn {
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    gap: 0.5rem;
 }
 
 /* Projects Section */
@@ -727,6 +731,18 @@ html {
 .project-link:hover {
     transform: translateY(-2px);
     box-shadow: var(--shadow-light);
+}
+
+/* All Projects Section */
+.all-projects {
+    padding: 100px 0;
+    background: var(--bg-primary);
+}
+
+.all-projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
 }
 
 /* Education Section */
@@ -1352,6 +1368,20 @@ html {
 
     .projects-grid {
         grid-template-columns: 1fr;
+    }
+
+    .all-projects-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .view-all-projects {
+        margin-top: 2rem;
+    }
+
+    .view-all-btn {
+        padding: 10px 25px;
+        font-size: 1rem;
     }
 
     .about-card {
