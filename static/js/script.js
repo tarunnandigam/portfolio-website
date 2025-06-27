@@ -58,54 +58,6 @@ const projectsData = [
         ],
         challenges: "Implementing real-time synchronization across multiple users and handling concurrent data updates.",
         learnings: "Mastered real-time web technologies, database optimization, and collaborative software design patterns."
-    },
-    {
-        title: "Weather Dashboard",
-        description: "A comprehensive weather application that provides real-time weather data, forecasts, and interactive maps. Built with modern JavaScript and integrated with multiple weather APIs for accurate and up-to-date information.",
-        technologies: ["JavaScript", "API Integration", "Chart.js", "HTML5", "CSS3", "OpenWeather API"],
-        features: [
-            "Real-time weather data display",
-            "5-day weather forecasts",
-            "Interactive weather maps",
-            "Location-based weather search",
-            "Weather alerts and notifications",
-            "Historical weather data charts",
-            "Mobile-responsive design"
-        ],
-        challenges: "Handling multiple API integrations and managing asynchronous data updates while maintaining smooth user experience.",
-        learnings: "Mastered API integration, data visualization with charts, and responsive web design principles."
-    },
-    {
-        title: "Portfolio Website",
-        description: "A professional portfolio website built with Flask, showcasing projects, skills, and achievements. Features modern design, responsive layout, and interactive elements to create an engaging user experience.",
-        technologies: ["Flask", "HTML5", "CSS3", "JavaScript", "Python", "Responsive Design"],
-        features: [
-            "Modern and professional design",
-            "Project showcase with detailed modals",
-            "Skills and education timeline",
-            "Contact form with validation",
-            "Mobile-responsive layout",
-            "Smooth animations and transitions",
-            "SEO-optimized structure"
-        ],
-        challenges: "Creating a balance between visual appeal and performance while ensuring cross-browser compatibility.",
-        learnings: "Enhanced understanding of web design principles, user experience, and frontend-backend integration."
-    },
-    {
-        title: "Expense Tracker",
-        description: "A personal finance management application that helps users track expenses, manage budgets, and analyze spending patterns. Built with React and Firebase for real-time data synchronization and user authentication.",
-        technologies: ["React", "Firebase", "Chart.js", "Material-UI", "JavaScript", "CSS3"],
-        features: [
-            "Expense categorization and tracking",
-            "Budget creation and monitoring",
-            "Visual spending analytics with charts",
-            "Real-time data synchronization",
-            "User authentication and data security",
-            "Export data to CSV/PDF",
-            "Monthly and yearly spending reports"
-        ],
-        challenges: "Implementing real-time data synchronization and creating intuitive data visualization for financial insights.",
-        learnings: "Gained expertise in React state management, Firebase integration, and financial data visualization techniques."
     }
 ];
 
@@ -162,20 +114,12 @@ window.addEventListener('scroll', () => {
     });
 });
 
-// Project card click handlers for both sections
-function initializeProjectCards() {
-    const allProjectCards = document.querySelectorAll('.project-card');
-    allProjectCards.forEach((card, index) => {
-        card.addEventListener('click', () => {
-            const projectIndex = card.getAttribute('data-project');
-            openProjectModal(parseInt(projectIndex));
-        });
+// Project card click handlers
+const projectCards = document.querySelectorAll('.project-card');
+projectCards.forEach((card, index) => {
+    card.addEventListener('click', () => {
+        openProjectModal(index);
     });
-}
-
-// Initialize project cards on page load
-document.addEventListener('DOMContentLoaded', () => {
-    initializeProjectCards();
 });
 
 // Project modal functionality

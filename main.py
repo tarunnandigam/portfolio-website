@@ -9,6 +9,10 @@ app.secret_key = os.environ.get("SESSION_SECRET", "dev-secret-key-for-portfolio"
 def index():
     return render_template('index.html')
 
+@app.route('/projects')
+def projects():
+    return render_template('projects.html')
+
 @app.route('/api/portfolio')
 def get_portfolio_data():
     """API endpoint to serve portfolio data"""

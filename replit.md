@@ -92,13 +92,13 @@ This is a personal portfolio website for Tarun Nandigam, a Computer Science Engi
 
 ## Recent Changes
 
-- June 27, 2025: Enhanced skills and projects sections
-  - Combined all technical skills into unified "Skill Set" section
-  - Added comprehensive "All Projects" section with 6 detailed projects
-  - Implemented "View All Projects" navigation button
-  - Enhanced project modal system with detailed descriptions for all projects
-  - Added mobile-responsive grid layouts for all project sections
-  - Updated navigation to include All Projects link
+- June 27, 2025: Created separate All Projects page
+  - Created dedicated `/projects` route and template for all projects
+  - Moved comprehensive project showcase to separate page
+  - Updated "View All Projects" button to navigate to separate page instead of showing on home
+  - Maintained 3 featured projects on home page with modal functionality
+  - Added 6 total projects on dedicated projects page with detailed descriptions
+  - Updated navigation structure to support multi-page architecture
 
 - June 27, 2025: Enhanced mobile responsiveness for About Me section
   - Added tablet breakpoint (992px) with optimized 2-column layout
