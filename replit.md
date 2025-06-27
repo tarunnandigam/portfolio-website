@@ -92,6 +92,15 @@ This is a personal portfolio website for Tarun Nandigam, a Computer Science Engi
 
 ## Recent Changes
 
+- June 27, 2025: Replaced location section with achievements and enhanced education timeline
+  - Removed location & availability section completely
+  - Added comprehensive "Top Achievements" section with 6 certifications and badges
+  - Implemented clickable achievement cards with detailed modal popups
+  - Enhanced education section with 3-timeline entries (BTech, Higher Secondary, Secondary)
+  - Added visual timeline with dots, connecting lines, and improved styling
+  - Included institution names, grades/percentages, and enhanced descriptions
+  - Added "View Certificate" buttons in achievement modals with authentic credential links
+
 - June 27, 2025: Created separate All Projects page
   - Created dedicated `/projects` route and template for all projects
   - Moved comprehensive project showcase to separate page

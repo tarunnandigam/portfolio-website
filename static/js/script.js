@@ -8,6 +8,12 @@ const modalTitle = document.getElementById('modal-title');
 const modalContent = document.getElementById('modal-content');
 const closeModal = document.querySelector('.close');
 
+// Achievement modal elements
+const achievementModal = document.getElementById('achievement-modal');
+const achievementModalTitle = document.getElementById('achievement-modal-title');
+const achievementModalContent = document.getElementById('achievement-modal-content');
+const closeAchievementModal = document.querySelector('.close-achievement');
+
 // Project data
 const projectsData = [
     {
@@ -64,6 +70,94 @@ const projectsData = [
         learnings: "Mastered real-time web technologies, database optimization, and collaborative software design patterns.",
         github: "https://github.com/tarunnandigam/task-management",
         website: "https://taskmanager-demo.tarunnandigam.com"
+    }
+];
+
+// Achievement data
+const achievementsData = [
+    {
+        title: "AWS Cloud Practitioner",
+        issuer: "Amazon Web Services",
+        date: "December 2024",
+        description: "Foundational certification demonstrating understanding of AWS Cloud concepts, services, security, architecture, pricing, and support.",
+        skills: ["Cloud Computing", "AWS Services", "Cloud Security", "Cost Management"],
+        credential: "https://www.credly.com/badges/aws-cloud-practitioner-badge",
+        details: [
+            "Comprehensive understanding of AWS global infrastructure",
+            "Knowledge of core AWS services and their use cases",
+            "Understanding of AWS security and compliance concepts",
+            "Familiarity with AWS pricing models and cost optimization"
+        ]
+    },
+    {
+        title: "Python Programming Certificate",
+        issuer: "Coursera - University of Michigan",
+        date: "October 2024",
+        description: "Comprehensive certification covering Python programming fundamentals, data structures, and practical application development.",
+        skills: ["Python", "Data Structures", "Object-Oriented Programming", "Problem Solving"],
+        credential: "https://coursera.org/verify/python-programming-certificate",
+        details: [
+            "Mastered Python syntax and programming concepts",
+            "Implemented various data structures and algorithms",
+            "Developed multiple Python applications and projects",
+            "Learned debugging and testing techniques"
+        ]
+    },
+    {
+        title: "React Developer Certificate",
+        issuer: "Meta - Coursera",
+        date: "September 2024",
+        description: "Professional certification in React development covering components, state management, hooks, and modern React practices.",
+        skills: ["React", "Frontend Development", "JavaScript", "State Management"],
+        credential: "https://coursera.org/verify/react-developer-certificate",
+        details: [
+            "Built dynamic user interfaces with React components",
+            "Implemented state management with hooks and context",
+            "Developed responsive and interactive web applications",
+            "Applied modern React patterns and best practices"
+        ]
+    },
+    {
+        title: "Hackathon Winner",
+        issuer: "CodeFest 2024",
+        date: "August 2024",
+        description: "First place winner in a 48-hour hackathon competition, leading a team to develop an innovative solution for real-world problems.",
+        skills: ["Problem Solving", "Team Leadership", "Innovation", "Time Management"],
+        credential: "https://codefest2024.com/winners/tarun-nandigam",
+        details: [
+            "Led a team of 4 developers in a competitive environment",
+            "Developed a complete application within 48 hours",
+            "Presented solution to industry judges and investors",
+            "Demonstrated leadership and technical excellence under pressure"
+        ]
+    },
+    {
+        title: "GitHub Arctic Code Vault",
+        issuer: "GitHub",
+        date: "July 2024",
+        description: "Recognition for contributing to open source projects that were archived in the GitHub Arctic Code Vault for future generations.",
+        skills: ["Open Source", "Version Control", "Collaboration", "Software Development"],
+        credential: "https://github.com/tarunnandigam/arctic-code-vault-badge",
+        details: [
+            "Contributed to multiple open source projects on GitHub",
+            "Code preserved for future generations in Arctic storage",
+            "Demonstrated commitment to open source development",
+            "Collaborated with global developer community"
+        ]
+    },
+    {
+        title: "SQL Database Certificate",
+        issuer: "Oracle Academy",
+        date: "June 2024",
+        description: "Comprehensive certification in SQL database design, querying, and management using Oracle database technologies.",
+        skills: ["SQL", "Database Design", "Data Modeling", "Query Optimization"],
+        credential: "https://education.oracle.com/verify/sql-certificate",
+        details: [
+            "Mastered advanced SQL querying techniques",
+            "Designed and implemented relational database schemas",
+            "Optimized database performance and query efficiency",
+            "Learned database security and backup strategies"
+        ]
     }
 ];
 
@@ -124,6 +218,14 @@ window.addEventListener('scroll', () => {
 projectCards.forEach((card, index) => {
     card.addEventListener('click', () => {
         openProjectModal(index);
+    });
+});
+
+// Achievement card click handlers
+const achievementCards = document.querySelectorAll('.achievement-card');
+achievementCards.forEach((card, index) => {
+    card.addEventListener('click', () => {
+        openAchievementModal(index);
     });
 });
 
@@ -366,6 +468,82 @@ async function loadPortfolioData() {
         showNotification('Failed to load portfolio data', 'error');
     }
 }
+
+// Achievement modal functionality
+function openAchievementModal(achievementIndex) {
+    if (!achievementModal || !achievementModalTitle || !achievementModalContent) return;
+    
+    const achievement = achievementsData[achievementIndex];
+    
+    achievementModalTitle.textContent = achievement.title;
+    achievementModalContent.innerHTML = `
+        <div class="project-modal-content">
+            <div class="achievement-modal-header">
+                <p class="achievement-issuer-modal" style="color: var(--secondary-color); font-weight: 600; margin-bottom: 0.5rem;">${achievement.issuer}</p>
+                <p class="achievement-date-modal" style="color: var(--text-secondary); margin-bottom: 1.5rem;">${achievement.date}</p>
+            </div>
+            
+            <div class="project-modal-section">
+                <h3>Description</h3>
+                <p>${achievement.description}</p>
+            </div>
+            
+            <div class="project-modal-section">
+                <h3>Skills Demonstrated</h3>
+                <div class="modal-tech-tags">
+                    ${achievement.skills.map(skill => 
+                        `<span class="modal-tech-tag">${skill}</span>`
+                    ).join('')}
+                </div>
+            </div>
+            
+            <div class="project-modal-section">
+                <h3>Key Achievements</h3>
+                <ul class="project-features-list">
+                    ${achievement.details.map(detail => 
+                        `<li>${detail}</li>`
+                    ).join('')}
+                </ul>
+            </div>
+            
+            <div class="project-modal-actions">
+                <a href="${achievement.credential}" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+                    <i class="fas fa-certificate"></i> View Certificate
+                </a>
+            </div>
+        </div>
+    `;
+    
+    achievementModal.style.display = 'block';
+    document.body.style.overflow = 'hidden';
+}
+
+function closeAchievementModalFunc() {
+    if (!achievementModal) return;
+    
+    achievementModal.style.display = 'none';
+    document.body.style.overflow = 'auto';
+}
+
+// Achievement modal event listeners
+if (closeAchievementModal) {
+    closeAchievementModal.addEventListener('click', closeAchievementModalFunc);
+}
+
+if (achievementModal) {
+    window.addEventListener('click', (event) => {
+        if (event.target === achievementModal) {
+            closeAchievementModalFunc();
+        }
+    });
+}
+
+// Escape key to close achievement modal
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && achievementModal && achievementModal.style.display === 'block') {
+        closeAchievementModalFunc();
+    }
+});
 
 // Initialize portfolio data loading
 document.addEventListener('DOMContentLoaded', () => {
