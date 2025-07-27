@@ -17,71 +17,109 @@ const closeAchievementModal = document.querySelector('.close-achievement');
 // Project data
 const projectsData = [
     {
-        title: "E-Commerce Platform",
-        description: "A comprehensive full-stack e-commerce solution built with modern web technologies. Features include user authentication, product catalog management, shopping cart functionality, secure payment integration, order tracking, and an admin dashboard for inventory management.",
-        technologies: ["React", "Node.js", "MongoDB", "Express", "Stripe API", "JWT Authentication"],
+        title: "HavenCraft - Handmade Crafts Marketplace",
+        description: "A full-featured E-commerce platform for buying and selling handmade crafts. The platform includes user authentication, product catalog, shopping cart, wishlist, order management, and a secure 4-step payment process.",
+        technologies: ["HTML5", "CSS3", "JavaScript", "Python", "PostgreSQL", "Flask"],
         features: [
-            "User registration and authentication",
-            "Product browsing and search functionality",
-            "Shopping cart and wishlist",
-            "Secure payment processing",
-            "Order management and tracking",
-            "Admin panel for product management",
+            "User authentication (login/signup) with secure password management",
+            "Product catalog with detailed overviews and filtering options",
+            "Shopping cart functionality with real-time updates",
+            "Wishlist for saving favorite items",
+            "User profile management with password updates",
+            "Order tracking with update and cancel options",
+            "4-step secure payment processing system",
             "Responsive design for all devices"
         ],
-        challenges: "Implementing secure payment processing and managing complex state across multiple components.",
-        learnings: "Gained deep understanding of full-stack development, database design, and secure coding practices.",
-        github: "https://github.com/tarunnandigam/ecommerce-platform",
-        website: "https://ecommerce-demo.tarunnandigam.com"
+        challenges: "Implementing a seamless user experience across the 4-step payment process while ensuring data consistency and security.",
+        learnings: "Gained expertise in full-stack development, database design with PostgreSQL, and implementing secure payment flows.",
+        github: "https://github.com/tarunnandigam/heavencraft.git",
+        website: "https://heavencraft.onrender.com"
     },
     {
-        title: "AI Chatbot Assistant",
-        description: "An intelligent chatbot system powered by natural language processing capabilities. The bot can understand user queries, provide contextual responses, learn from conversations, and integrate with various APIs to fetch real-time information.",
-        technologies: ["Python", "TensorFlow", "Flask", "NLTK", "SQLite", "REST APIs"],
+        title: "PageControl - Memory Management Simulator",
+        description: "A tool designed to simulate and visualize various page replacement algorithms used in operating systems. This interactive application helps users understand how different algorithms manage memory pages and handle page faults in a virtual memory system.",
+        technologies: ["Python", "Tkinter", "Operating System Concepts", "Algorithms", "Data Structures"],
         features: [
-            "Natural language understanding",
-            "Context-aware conversations",
-            "Integration with external APIs",
-            "Machine learning for response improvement",
-            "Multi-language support",
-            "Conversation history and analytics",
-            "Easy integration with web applications"
+            "Implements multiple page replacement algorithms: FIFO, LRU, Optimal, and Random",
+            "Interactive GUI with real-time visualization of page replacement process",
+            "Step-by-step execution to understand algorithm behavior",
+            "Visual representation of memory frames and page faults",
+            "Customizable reference string and number of frames",
+            "Performance metrics including hit ratio and page fault count",
+            "Clear visualization of algorithm comparisons"
         ],
-        challenges: "Training the model to understand context and provide relevant responses while handling edge cases.",
-        learnings: "Developed expertise in NLP, machine learning model training, and API integration.",
-        github: "https://github.com/tarunnandigam/ai-chatbot",
-        website: "https://chatbot-demo.tarunnandigam.com"
+        challenges: [
+            "Implementing the Optimal algorithm with future reference prediction",
+            "Creating an intuitive interface for complex memory operations",
+            "Ensuring accurate visualization of page replacement steps",
+            "Optimizing performance for large reference strings"
+        ],
+        learnings: [
+            "Deepened understanding of memory management in operating systems",
+            "Improved skills in algorithm implementation and optimization",
+            "Enhanced Python GUI development with Tkinter",
+        ],
+        github: "https://github.com/tarunnandigam/memory-management-simulator.git",
+        demo: "https://github.com/tarunnandigam/memory-management-simulator"
     },
     {
-        title: "Task Management System",
-        description: "A collaborative project management platform designed for teams to organize, track, and complete projects efficiently. Features real-time collaboration, task assignment, progress tracking, and comprehensive reporting tools.",
-        technologies: ["Vue.js", "Express.js", "Socket.io", "PostgreSQL", "Redis", "JWT"],
+        title: "TravelVax - Travel Vaccine Recommendation System",
+        description: "A comprehensive web application that provides personalized vaccine recommendations for travelers based on destination, age, and medical conditions. Helps users make informed decisions about necessary vaccinations and health precautions before international travel.",
+        technologies: ["HTML5", "CSS3", "JavaScript", "Google Gemini API", "REST Countries API"],
         features: [
-            "Real-time collaboration and updates",
-            "Task creation and assignment",
-            "Progress tracking and analytics",
-            "File sharing and comments",
-            "Team member management",
-            "Deadline notifications",
-            "Kanban board interface",
-            "Time tracking and reporting"
+            "Destination-based vaccine recommendations",
+            "Personalized health advice based on age and medical history",
+            "AI-powered chat assistant for travel health queries",
+            "Comprehensive database of vaccines and health information",
+            "Responsive design for all devices",
+            "Interactive user interface with real-time recommendations"
         ],
-        challenges: "Implementing real-time synchronization across multiple users and handling concurrent data updates.",
-        learnings: "Mastered real-time web technologies, database optimization, and collaborative software design patterns.",
-        github: "https://github.com/tarunnandigam/task-management",
-        website: "https://taskmanager-demo.tarunnandigam.com"
+        challenges: "Integrating multiple health data sources and ensuring accurate, up-to-date vaccine recommendations while maintaining a simple user experience.",
+        learnings: "Gained expertise in API integration, data visualization, and creating user-friendly health information systems.",
+        github: "https://github.com/tarunnandigam/travelmedicalguide.git",
+        website: "https://tarunnandigam.github.io/travelmedicalguide/"
+    },
+    {
+        title: "PageControl - Memory Management Simulator",
+        description: "An educational tool designed to simulate and visualize various page replacement algorithms used in operating systems. This interactive application helps users understand how different algorithms manage memory pages and handle page faults in a virtual memory system.",
+        technologies: ["Python", "Tkinter", "Operating System Concepts", "Algorithms", "Data Structures"],
+        features: [
+            "Implements multiple page replacement algorithms: FIFO, LRU, Optimal, and Random",
+            "Interactive GUI with real-time visualization of page replacement process",
+            "Step-by-step execution to understand algorithm behavior",
+            "Visual representation of memory frames and page faults",
+            "Customizable reference string and number of frames",
+            "Performance metrics including hit ratio and page fault count",
+            "Clear visualization of algorithm comparisons"
+        ],
+        challenges: [
+            "Implementing the Optimal algorithm with future reference prediction",
+            "Creating an intuitive interface for complex memory operations",
+            "Ensuring accurate visualization of page replacement steps",
+            "Optimizing performance for large reference strings"
+        ],
+        learnings: [
+            "Deepened understanding of memory management in operating systems",
+            "Improved skills in algorithm implementation and optimization",
+            "Enhanced Python GUI development with Tkinter",
+            "Better understanding of virtual memory concepts",
+            "Experience in educational tool development"
+        ],
+        impact: "Developed as part of my academic curriculum, this tool helped me and my peers better understand complex memory management concepts through interactive visualization.",
+        github: "https://github.com/tarunnandigam/memory-management-simulator.git",
+        demo: "https://github.com/tarunnandigam/memory-management-simulator"
     }
 ];
 
 // Achievement data
 const achievementsData = [
     {
-        title: "AWS Cloud Practitioner",
+        title: "AWS Cloud Foundation",
         issuer: "Amazon Web Services",
-        date: "December 2024",
+        date: "December 2025",
         description: "Foundational certification demonstrating understanding of AWS Cloud concepts, services, security, architecture, pricing, and support.",
         skills: ["Cloud Computing", "AWS Services", "Cloud Security", "Cost Management"],
-        credential: "https://www.credly.com/badges/aws-cloud-practitioner-badge",
+        credential: "https://drive.google.com/file/d/1-cRoXXt_5X_2EINsEHItCX1Iyji_Uxd2/view?usp=sharing",
         details: [
             "Comprehensive understanding of AWS global infrastructure",
             "Knowledge of core AWS services and their use cases",
@@ -90,73 +128,32 @@ const achievementsData = [
         ]
     },
     {
-        title: "Python Programming Certificate",
-        issuer: "Coursera - University of Michigan",
-        date: "October 2024",
-        description: "Comprehensive certification covering Python programming fundamentals, data structures, and practical application development.",
-        skills: ["Python", "Data Structures", "Object-Oriented Programming", "Problem Solving"],
-        credential: "https://coursera.org/verify/python-programming-certificate",
+        title: "Java Programming Certificate",
+        issuer: "Lovely Professional University 🗙 Neo colab",
+        date: "2024",
+        description: "Professional certification demonstrating proficiency in Java programming, object-oriented concepts, and application development.",
+        skills: ["Java", "Object-Oriented Programming", "Logic Building", "Algorithms"],
+        credential: "https://drive.google.com/file/d/1P47uYmn08uF0lz9F29KpIO6jJhL7MhqD/view?usp=sharing",
         details: [
-            "Mastered Python syntax and programming concepts",
-            "Implemented various data structures and algorithms",
-            "Developed multiple Python applications and projects",
-            "Learned debugging and testing techniques"
+            "Mastered Java syntax and core programming concepts",
+            "Developed robust applications using OOP principles",
+            "Implemented various data structures and algorithms in Java",
+            "Gained expertise in exception handling and multi-threading"
         ]
     },
     {
-        title: "React Developer Certificate",
-        issuer: "Meta - Coursera",
-        date: "September 2024",
-        description: "Professional certification in React development covering components, state management, hooks, and modern React practices.",
-        skills: ["React", "Frontend Development", "JavaScript", "State Management"],
-        credential: "https://coursera.org/verify/react-developer-certificate",
+        title: "Oracle Cloud Infrastructure 2025 Certified Foundations Associate",
+        issuer: "Oracle",
+        date: "2025",
+        description: "Professional certification demonstrating expertise in Oracle Cloud Infrastructure fundamentals, including compute, storage, networking, and security services.",
+        skills: ["Cloud Computing", "OCI Services", "Cloud Security", "Networking", "Database", "AI Services"],
+        credential: "https://drive.google.com/file/d/1M2ZKd0CingFsHziEwHB7dBvHc_wvTk0X/view?usp=sharing",
         details: [
-            "Built dynamic user interfaces with React components",
-            "Implemented state management with hooks and context",
-            "Developed responsive and interactive web applications",
-            "Applied modern React patterns and best practices"
-        ]
-    },
-    {
-        title: "Hackathon Winner",
-        issuer: "CodeFest 2024",
-        date: "August 2024",
-        description: "First place winner in a 48-hour hackathon competition, leading a team to develop an innovative solution for real-world problems.",
-        skills: ["Problem Solving", "Team Leadership", "Innovation", "Time Management"],
-        credential: "https://codefest2024.com/winners/tarun-nandigam",
-        details: [
-            "Led a team of 4 developers in a competitive environment",
-            "Developed a complete application within 48 hours",
-            "Presented solution to industry judges and investors",
-            "Demonstrated leadership and technical excellence under pressure"
-        ]
-    },
-    {
-        title: "GitHub Arctic Code Vault",
-        issuer: "GitHub",
-        date: "July 2024",
-        description: "Recognition for contributing to open source projects that were archived in the GitHub Arctic Code Vault for future generations.",
-        skills: ["Open Source", "Version Control", "Collaboration", "Software Development"],
-        credential: "https://github.com/tarunnandigam/arctic-code-vault-badge",
-        details: [
-            "Contributed to multiple open source projects on GitHub",
-            "Code preserved for future generations in Arctic storage",
-            "Demonstrated commitment to open source development",
-            "Collaborated with global developer community"
-        ]
-    },
-    {
-        title: "SQL Database Certificate",
-        issuer: "Oracle Academy",
-        date: "June 2024",
-        description: "Comprehensive certification in SQL database design, querying, and management using Oracle database technologies.",
-        skills: ["SQL", "Database Design", "Data Modeling", "Query Optimization"],
-        credential: "https://education.oracle.com/verify/sql-certificate",
-        details: [
-            "Mastered advanced SQL querying techniques",
-            "Designed and implemented relational database schemas",
-            "Optimized database performance and query efficiency",
-            "Learned database security and backup strategies"
+            "Understanding of OCI architecture and distributed cloud model",
+            "Expertise in managing identity, access, and security in OCI",
+            "Proficiency in deploying and managing OCI compute, storage, and database services",
+            "Knowledge of OCI networking including VCN, load balancers, and security",
+            "Understanding of container workloads and serverless functions in OCI"
         ]
     }
 ];
@@ -221,14 +218,6 @@ projectCards.forEach((card, index) => {
     });
 });
 
-// Achievement card click handlers
-const achievementCards = document.querySelectorAll('.achievement-card');
-achievementCards.forEach((card, index) => {
-    card.addEventListener('click', () => {
-        openAchievementModal(index);
-    });
-});
-
 // Project modal functionality
 function openProjectModal(projectIndex) {
     if (!modal || !modalTitle || !modalContent) return;
@@ -236,47 +225,73 @@ function openProjectModal(projectIndex) {
     const project = projectsData[projectIndex];
     
     modalTitle.textContent = project.title;
-    modalContent.innerHTML = `
+    
+    // Create modal content with enhanced layout and additional fields
+    let modalHTML = `
         <div class="project-modal-content">
             <p class="project-modal-description">${project.description}</p>
             
+            ${project.impact ? `
+            <div class="impact-note">
+                <i class="fas fa-chart-line"></i>
+                <strong>Impact:</strong> ${project.impact}
+            </div>` : ''}
+            
             <div class="project-modal-section">
-                <h3>Technologies Used</h3>
+                <h3><i class="fas fa-tools"></i> Technologies Used</h3>
                 <div class="modal-tech-tags">
                     ${project.technologies.map(tech => `<span class="modal-tech-tag">${tech}</span>`).join('')}
                 </div>
             </div>
             
             <div class="project-modal-section">
-                <h3>Key Features</h3>
+                <h3><i class="fas fa-star"></i> Key Features</h3>
                 <ul class="project-features-list">
                     ${project.features.map(feature => `<li>${feature}</li>`).join('')}
                 </ul>
             </div>
             
             <div class="project-modal-section">
-                <h3>Challenges & Solutions</h3>
-                <p>${project.challenges}</p>
+                <h3><i class="fas fa-exclamation-triangle"></i> Challenges</h3>
+                ${Array.isArray(project.challenges) 
+                    ? `<ul class="challenge-list">${project.challenges.map(challenge => `<li>${challenge}</li>`).join('')}</ul>`
+                    : `<p>${project.challenges}</p>`}
             </div>
             
             <div class="project-modal-section">
-                <h3>Key Learnings</h3>
-                <p>${project.learnings}</p>
+                <h3><i class="fas fa-graduation-cap"></i> Key Learnings</h3>
+                ${Array.isArray(project.learnings) 
+                    ? `<ul class="learning-list">${project.learnings.map(learning => `<li>${learning}</li>`).join('')}</ul>`
+                    : `<p>${project.learnings}</p>`}
             </div>
             
             <div class="project-modal-actions">
-                <a href="${project.github}" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+                ${project.github ? `
+                <a href="${project.github}" class="btn btn-github" target="_blank" rel="noopener noreferrer">
                     <i class="fab fa-github"></i> View Code
-                </a>
-                <a href="${project.website}" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+                </a>` : ''}
+                
+                ${project.website && project.website !== '#' ? `
+                <a href="${project.website}" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
                     <i class="fas fa-external-link-alt"></i> Live Demo
-                </a>
+                </a>` : ''}
+                
+                ${project.demo ? `
+                <a href="${project.demo}" class="btn btn-demo" target="_blank" rel="noopener noreferrer">
+                    <i class="fas fa-play-circle"></i> View Demo
+                </a>` : ''}
             </div>
         </div>
     `;
     
+    modalContent.innerHTML = modalHTML;
     modal.style.display = 'block';
     document.body.style.overflow = 'hidden';
+    
+    // Add animation class
+    setTimeout(() => {
+        modal.classList.add('modal-visible');
+    }, 10);
 }
 
 // Close modal functionality
@@ -367,6 +382,59 @@ function showNotification(message, type = 'info') {
     }, 5000);
 }
 
+// Intersection Observer for About section reveal with staggered animation
+const initAboutAnimation = () => {
+    const aboutSection = document.querySelector('.about');
+
+    if (!aboutSection) return;
+
+    // Function to handle the reveal logic
+    const handleIntersection = (entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // Add reveal class to animate in
+                aboutSection.classList.add('reveal');
+            } else {
+                // Remove reveal class to reset animation
+                aboutSection.classList.remove('reveal');
+            }
+        });
+    };
+
+    // Initialize cards with transition delays
+    const cards = aboutSection.querySelectorAll('.about-card');
+    cards.forEach((card, index) => {
+        card.style.transitionDelay = `${index * 0.15}s`;
+    });
+
+    // Create observer
+    const aboutObserver = new IntersectionObserver(handleIntersection, {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    });
+
+    // Start observing
+    aboutObserver.observe(aboutSection);
+
+    // Clean up function (in case needed)
+    return () => aboutObserver.disconnect();
+};
+
+// Initialize animations when DOM is loaded
+document.addEventListener('DOMContentLoaded', () => {
+    initAboutAnimation();
+});
+
+// Helper function to check if element is in viewport
+const isElementInViewport = (el) => {
+    if (!el) return false;
+    const rect = el.getBoundingClientRect();
+    return (
+        rect.top <= (window.innerHeight * 0.85) &&
+        rect.bottom >= (window.innerHeight * 0.15)
+    );
+};
+
 // Intersection Observer for animations
 const observerOptions = {
     threshold: 0.1,
@@ -390,30 +458,6 @@ document.addEventListener('DOMContentLoaded', () => {
         el.style.transitionDelay = `${index * 0.1}s`;
         observer.observe(el);
     });
-});
-
-// Parallax effect for floating elements
-window.addEventListener('scroll', () => {
-    const scrolled = window.pageYOffset;
-    const parallaxElements = document.querySelectorAll('.float-element');
-    
-    parallaxElements.forEach((element, index) => {
-        const speed = 0.5 + (index * 0.2);
-        const yPos = -(scrolled * speed);
-        element.style.transform = `translateY(${yPos}px)`;
-    });
-});
-
-// Navbar background on scroll
-window.addEventListener('scroll', () => {
-    const navbar = document.querySelector('.navbar');
-    if (navbar) {
-        if (window.scrollY > 50) {
-            navbar.style.background = 'rgba(255, 255, 255, 0.98)';
-        } else {
-            navbar.style.background = 'rgba(255, 255, 255, 0.95)';
-        }
-    }
 });
 
 // Typing effect for hero title
@@ -469,83 +513,82 @@ async function loadPortfolioData() {
     }
 }
 
-// Achievement modal functionality
-function openAchievementModal(achievementIndex) {
-    if (!achievementModal || !achievementModalTitle || !achievementModalContent) return;
-    
-    const achievement = achievementsData[achievementIndex];
-    
-    achievementModalTitle.textContent = achievement.title;
-    achievementModalContent.innerHTML = `
-        <div class="project-modal-content">
-            <div class="achievement-modal-header">
-                <p class="achievement-issuer-modal" style="color: var(--secondary-color); font-weight: 600; margin-bottom: 0.5rem;">${achievement.issuer}</p>
-                <p class="achievement-date-modal" style="color: var(--text-secondary); margin-bottom: 1.5rem;">${achievement.date}</p>
-            </div>
-            
-            <div class="project-modal-section">
-                <h3>Description</h3>
-                <p>${achievement.description}</p>
-            </div>
-            
-            <div class="project-modal-section">
-                <h3>Skills Demonstrated</h3>
-                <div class="modal-tech-tags">
-                    ${achievement.skills.map(skill => 
-                        `<span class="modal-tech-tag">${skill}</span>`
-                    ).join('')}
-                </div>
-            </div>
-            
-            <div class="project-modal-section">
-                <h3>Key Achievements</h3>
-                <ul class="project-features-list">
-                    ${achievement.details.map(detail => 
-                        `<li>${detail}</li>`
-                    ).join('')}
-                </ul>
-            </div>
-            
-            <div class="project-modal-actions">
-                <a href="${achievement.credential}" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
-                    <i class="fas fa-certificate"></i> View Certificate
-                </a>
-            </div>
-        </div>
-    `;
-    
-    achievementModal.style.display = 'block';
-    document.body.style.overflow = 'hidden';
-}
-
-function closeAchievementModalFunc() {
-    if (!achievementModal) return;
-    
-    achievementModal.style.display = 'none';
-    document.body.style.overflow = 'auto';
-}
-
-// Achievement modal event listeners
-if (closeAchievementModal) {
-    closeAchievementModal.addEventListener('click', closeAchievementModalFunc);
-}
-
-if (achievementModal) {
-    window.addEventListener('click', (event) => {
-        if (event.target === achievementModal) {
-            closeAchievementModalFunc();
-        }
-    });
-}
-
-// Escape key to close achievement modal
-document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && achievementModal && achievementModal.style.display === 'block') {
-        closeAchievementModalFunc();
-    }
-});
-
 // Initialize portfolio data loading
 document.addEventListener('DOMContentLoaded', () => {
     loadPortfolioData();
+    initCertificationsCarousel();
+});
+
+/**
+ * Initialize certifications carousel with auto-scrolling
+ */
+function initCertificationsCarousel() {
+    const track = document.querySelector('.certifications-track');
+    if (!track) return;
+
+    // Duplicate cards for infinite scroll effect
+    const cards = track.querySelectorAll('.certification-card');
+    if (!cards.length) return;
+
+    // Clone cards for infinite scroll
+    cards.forEach(card => {
+        const clone = card.cloneNode(true);
+        track.appendChild(clone);
+    });
+
+    // Pause animation when hovering over the track
+    track.addEventListener('mouseenter', () => {
+        track.style.animationPlayState = 'paused';
+    });
+
+    track.addEventListener('mouseleave', () => {
+        track.style.animationPlayState = 'running';
+    });
+
+    // Handle touch events for mobile
+    let touchStartX = 0;
+    let touchEndX = 0;
+    
+    track.addEventListener('touchstart', (e) => {
+        touchStartX = e.changedTouches[0].screenX;
+        track.style.animationPlayState = 'paused';
+    }, { passive: true });
+    
+    track.addEventListener('touchend', (e) => {
+        touchEndX = e.changedTouches[0].screenX;
+        const difference = touchStartX - touchEndX;
+        
+        // Only resume if not a significant swipe
+        if (Math.abs(difference) < 50) {
+            setTimeout(() => {
+                track.style.animationPlayState = 'running';
+            }, 1000);
+        } else {
+            track.style.animationPlayState = 'running';
+        }
+    }, { passive: true });
+}
+
+// Parallax effect for floating elements
+window.addEventListener('scroll', () => {
+    const scrolled = window.pageYOffset;
+    const parallaxElements = document.querySelectorAll('.float-element');
+    
+    parallaxElements.forEach((element, index) => {
+        const speed = 0.5 + (index * 0.2);
+        const yPos = -(scrolled * speed);
+        element.style.transform = `translateY(${yPos}px)`;
+    });
+});
+
+// Navbar background on scroll
+window.addEventListener('scroll', () => {
+    const navbar = document.querySelector('.navbar');
+    if (navbar) {
+        if (window.scrollY > 50) {
+            navbar.style.background = 'rgba(255, 255, 255, 0.98)';
+        } else {
+            navbar.style.background = 'rgba(255, 255, 255, 0.95)';
+        }
+    }
 });

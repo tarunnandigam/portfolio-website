@@ -1,78 +1,80 @@
 // Project data for all projects page
 const projectsData = [
     {
-        title: "E-Commerce Platform",
-        description: "A comprehensive full-stack e-commerce solution built with modern web technologies. Features include user authentication, product catalog management, shopping cart functionality, secure payment integration, order tracking, and an admin dashboard for inventory management.",
-        technologies: ["React", "Node.js", "MongoDB", "Express", "Stripe API", "JWT Authentication"],
+        title: "HavenCraft - Handmade Crafts Marketplace",
+        description: "A full-featured E-commerce platform for buying and selling handmade crafts. The platform includes user authentication, product catalog, shopping cart, wishlist, order management, and a secure 4-step payment process.",
+        technologies: ["HTML5", "CSS3", "JavaScript", "Python", "PostgreSQL", "Flask"],
         features: [
-            "User registration and authentication",
-            "Product browsing and search functionality",
-            "Shopping cart and wishlist",
-            "Secure payment processing",
-            "Order management and tracking",
-            "Admin panel for product management",
+            "User authentication (login/signup) with secure password management",
+            "Product catalog with detailed overviews and filtering options",
+            "Shopping cart functionality with real-time updates",
+            "Wishlist for saving favorite items",
+            "User profile management with password updates",
+            "Order tracking with update and cancel options",
+            "4-step secure payment processing system",
             "Responsive design for all devices"
         ],
-        challenges: "Implementing secure payment processing and managing complex state across multiple components.",
-        learnings: "Gained deep understanding of full-stack development, database design, and secure coding practices.",
-        github: "https://github.com/tarunnandigam/ecommerce-platform",
-        website: "https://ecommerce-demo.tarunnandigam.com"
+        challenges: "Implementing a seamless user experience across the 4-step payment process while ensuring data consistency and security.",
+        learnings: "Gained expertise in full-stack development, database design with PostgreSQL, and implementing secure payment flows.",
+        github: "https://github.com/tarunnandigam/heavencraft.git",
+        website: "https://heavencraft.onrender.com"
     },
     {
-        title: "AI Chatbot Assistant",
-        description: "An intelligent chatbot system powered by natural language processing capabilities. The bot can understand user queries, provide contextual responses, learn from conversations, and integrate with various APIs to fetch real-time information.",
-        technologies: ["Python", "TensorFlow", "Flask", "NLTK", "SQLite", "REST APIs"],
+        title: "Store It - Cloud File Storage (Coming Soon)",
+        description: "A secure cloud-based file storage web application that allows users to upload, manage, and access their files from anywhere. Built with a focus on security and user experience.",
+        technologies: ["HTML5", "CSS3", "JavaScript", "Python", "Flask", "AWS S3", "REST APIs"],
         features: [
-            "Natural language understanding",
-            "Context-aware conversations",
-            "Integration with external APIs",
-            "Machine learning for response improvement",
-            "Multi-language support",
-            "Conversation history and analytics",
-            "Easy integration with web applications"
+            "Secure file uploads using AWS S3 pre-signed URLs",
+            "OTP-based email authentication",
+            "Responsive design for all devices",
+            "File organization with folders and tags",
+            "File preview and download functionality",
+            "User-friendly dashboard with file management",
+            "Secure file sharing options"
         ],
-        challenges: "Training the model to understand context and provide relevant responses while handling edge cases.",
-        learnings: "Developed expertise in NLP, machine learning model training, and API integration.",
-        github: "https://github.com/tarunnandigam/ai-chatbot",
-        website: "https://chatbot-demo.tarunnandigam.com"
+        challenges: "Implementing secure file uploads and ensuring data integrity while maintaining good performance.",
+        learnings: "Gained expertise in AWS services, secure file handling, and building scalable web applications.",
+        github: "https://github.com/tarunnandigam/store-it",
+        website: "#"
     },
     {
-        title: "Task Management System",
-        description: "A collaborative project management platform designed for teams to organize, track, and complete projects efficiently. Features real-time collaboration, task assignment, progress tracking, and comprehensive reporting tools.",
-        technologies: ["Vue.js", "Express.js", "Socket.io", "PostgreSQL", "Redis", "JWT"],
+        title: "TravelVax - Travel Vaccine Recommendation System",
+        description: "A comprehensive web application that provides personalized vaccine recommendations for travelers based on destination, age, and medical conditions. Helps users make informed decisions about necessary vaccinations and health precautions before international travel.",
+        technologies: ["HTML5", "CSS3", "JavaScript", "Google Gemini API", "REST Countries API"],
         features: [
-            "Real-time collaboration and updates",
-            "Task creation and assignment",
-            "Progress tracking and analytics",
-            "File sharing and comments",
-            "Team member management",
-            "Deadline notifications",
-            "Kanban board interface",
-            "Time tracking and reporting"
+            "Destination-based vaccine recommendations",
+            "Personalized health advice based on age and medical history",
+            "AI-powered chat assistant for travel health queries",
+            "Comprehensive database of vaccines and health information",
+            "Responsive design for all devices",
+            "Interactive user interface with real-time recommendations",
+            "Country-specific health tips and guidelines",
+            "Secure handling of personal health information"
         ],
-        challenges: "Implementing real-time synchronization across multiple users and handling concurrent data updates.",
-        learnings: "Mastered real-time web technologies, database optimization, and collaborative software design patterns.",
-        github: "https://github.com/tarunnandigam/task-management",
-        website: "https://taskmanager-demo.tarunnandigam.com"
+        challenges: "Implementing accurate vaccine recommendations based on multiple factors and ensuring the AI provides reliable health advice.",
+        learnings: "Gained expertise in health tech applications, API integrations, and creating user-friendly interfaces for complex health data.",
+        github: "https://github.com/tarunnandigam/travelmedicalguide.git",
+        website: "https://tarunnandigam.github.io/travelmedicalguide/"
     },
+
     {
-        title: "Weather Dashboard",
-        description: "A comprehensive weather application that provides real-time weather data, forecasts, and interactive maps. Built with modern JavaScript and integrated with multiple weather APIs for accurate and up-to-date information.",
-        technologies: ["JavaScript", "API Integration", "Chart.js", "HTML5", "CSS3", "OpenWeather API"],
+        title: "PageControl - Memory Management Simulator",
+        description: "An educational and interactive memory management simulator designed to simplify the concepts of page replacement algorithms in operating systems. It enables users to simulate different algorithms, input memory parameters, and analyze performance metrics such as hit ratio, miss ratio, and page faults.",
+        technologies: ["Python","Algorithms", "Operating System"],
         features: [
-            "Real-time weather data display",
-            "5-day weather forecasts",
-            "Interactive weather maps",
-            "Location-based weather search",
-            "Weather alerts and notifications",
-            "Historical weather data charts",
-            "Mobile-responsive design"
+            "Multiple Page Replacement Algorithms (FIFO, LRU, Optimal, Random)",
+            "Interactive GUI with real-time visualization",
+            "Step-by-step execution of algorithms",
+            "Performance metrics (hit ratio, miss ratio, page faults)",
+            "Customizable memory parameters",
+            "Visual representation of memory states"
         ],
-        challenges: "Handling multiple API integrations and managing asynchronous data updates while maintaining smooth user experience.",
-        learnings: "Mastered API integration, data visualization with charts, and responsive web design principles.",
-        github: "https://github.com/tarunnandigam/weather-dashboard",
-        website: "https://weather-app.tarunnandigam.com"
+        challenges: "Implementing the Optimal algorithm which requires lookahead in the reference string and ensuring smooth visualization of the simulation steps.",
+        learnings: "Gained deep understanding of memory management concepts and algorithm visualization techniques.",
+        github: "https://github.com/tarunnandigam/memory-management-simulator.git",
+        demo: "https://github.com/tarunnandigam/memory-management-simulator"
     },
+
     {
         title: "Portfolio Website",
         description: "A professional portfolio website built with Flask, showcasing projects, skills, and achievements. Features modern design, responsive layout, and interactive elements to create an engaging user experience.",
@@ -89,26 +91,9 @@ const projectsData = [
         challenges: "Creating a balance between visual appeal and performance while ensuring cross-browser compatibility.",
         learnings: "Enhanced understanding of web design principles, user experience, and frontend-backend integration.",
         github: "https://github.com/tarunnandigam/portfolio-website",
-        website: "https://portfolio.tarunnandigam.com"
+        website: "#"
     },
-    {
-        title: "Expense Tracker",
-        description: "A personal finance management application that helps users track expenses, manage budgets, and analyze spending patterns. Built with React and Firebase for real-time data synchronization and user authentication.",
-        technologies: ["React", "Firebase", "Chart.js", "Material-UI", "JavaScript", "CSS3"],
-        features: [
-            "Expense categorization and tracking",
-            "Budget creation and monitoring",
-            "Visual spending analytics with charts",
-            "Real-time data synchronization",
-            "User authentication and data security",
-            "Export data to CSV/PDF",
-            "Monthly and yearly spending reports"
-        ],
-        challenges: "Implementing real-time data synchronization and creating intuitive data visualization for financial insights.",
-        learnings: "Gained expertise in React state management, Firebase integration, and financial data visualization techniques.",
-        github: "https://github.com/tarunnandigam/expense-tracker",
-        website: "https://expenses.tarunnandigam.com"
-    }
+
 ];
 
 // DOM elements
@@ -122,27 +107,127 @@ const closeModal = document.querySelector('.close');
 function generateProjectCards() {
     projectsGrid.innerHTML = '';
     
+    // Icons for different project types
+    const projectIcons = {
+        'ecommerce': { icon: 'shopping-cart', color: '#4CAF50' },
+        'ai': { icon: 'robot', color: '#9C27B0' },
+        'travel': { icon: 'plane-departure', color: '#3b82f6' },
+        'weather': { icon: 'cloud-sun', color: '#03A9F4' },
+        'portfolio': { icon: 'user-tie', color: '#673AB7' },
+        'expense': { icon: 'wallet', color: '#FF9800' }
+    };
+    
+    // Get project type from title for icon selection
+    function getProjectType(title) {
+        const lowerTitle = title.toLowerCase();
+        // Explicitly check for TravelVax first
+        if (lowerTitle.includes('travelvax') || lowerTitle.includes('travel vax') || lowerTitle.includes('travel-vax') || lowerTitle.includes('vaccine')) return 'travel';
+        if (lowerTitle.includes('havencraft') || lowerTitle.includes('ecom') || lowerTitle.includes('shop')) return 'ecommerce';
+        if (lowerTitle.includes('ai') || lowerTitle.includes('chat')) return 'ai';
+        if (lowerTitle.includes('weather')) return 'weather';
+        if (lowerTitle.includes('portfolio')) return 'portfolio';
+        if (lowerTitle.includes('expense') || lowerTitle.includes('finance')) return 'expense';
+        return 'code';
+    }
+    
+    // Technology icons mapping
+    const techIcons = {
+        'react': { icon: 'react', color: '#61DAFB' },
+        'node': { icon: 'node-js', color: '#68A063' },
+        'mongodb': { icon: 'database', color: '#4DB33D' },
+        'express': { icon: 'server', color: '#000000' },
+        'python': { icon: 'python', color: '#3776AB' },
+        'tensorflow': { icon: 'brain', color: '#FF6F00' },
+        'flask': { icon: 'flask', color: '#000000' },
+        'vue': { icon: 'vuejs', color: '#4FC08D' },
+        'socket': { icon: 'bolt', color: '#010101' },
+        'javascript': { icon: 'js', color: '#F7DF1E' },
+        'html': { icon: 'html5', color: '#E34F26' },
+        'css': { icon: 'css3-alt', color: '#1572B6' },
+        'firebase': { icon: 'fire', color: '#FFCA28' },
+        'material': { icon: 'palette', color: '#757575' },
+        'chart': { icon: 'chart-bar', color: '#4CAF50' }
+    };
+    
+    // Get icon for technology
+    function getTechIcon(tech) {
+        const lowerTech = tech.toLowerCase();
+        for (const [key, value] of Object.entries(techIcons)) {
+            if (lowerTech.includes(key)) {
+                return `<i class="fab fa-${value.icon}" style="color: ${value.color};"></i>`;
+            }
+        }
+        return `<i class="fas fa-code"></i>`;
+    }
+    
     projectsData.forEach((project, index) => {
         const projectCard = document.createElement('div');
         projectCard.className = 'project-card';
         projectCard.setAttribute('data-project', index);
         
+        const projectType = getProjectType(project.title);
+        const iconInfo = projectIcons[projectType] || { icon: 'code', color: '#666666' };
+        
+        // Special handling for TravelVax to ensure correct icon
+        let iconClass = iconInfo.icon;
+        let iconColor = iconInfo.color;
+        
+        if (project.title.toLowerCase().includes('travelvax') || project.title.toLowerCase().includes('travel vax')) {
+            iconClass = 'plane-departure';
+            iconColor = '#3b82f6';
+        }
+        
         projectCard.innerHTML = `
-            <div class="project-icon">
-                <i class="fas fa-code"></i>
-            </div>
-            <h3 class="project-title">${project.title}</h3>
-            <p class="project-description">${project.description.substring(0, 120)}...</p>
-            <div class="project-tech">
-                ${project.technologies.slice(0, 3).map(tech => 
-                    `<span class="tech-tag">${tech}</span>`
-                ).join('')}
-                ${project.technologies.length > 3 ? '<span class="tech-tag">+' + (project.technologies.length - 3) + ' more</span>' : ''}
+            <div class="project-content">
+                <h3 class="project-title">${project.title}</h3>
+                <p class="project-description">${project.description.substring(0, 120)}...</p>
+                <div class="project-tech">
+                    ${project.technologies.slice(0, 3).map(tech => 
+                        `<span class="tech-tag">${getTechIcon(tech)} ${tech}</span>`
+                    ).join('')}
+                    ${project.technologies.length > 3 ? 
+                        `<span class="tech-tag">+${project.technologies.length - 3} more</span>` : ''}
+                </div>
+                <div class="project-links" style="margin-top: 10px;">
+                    <a href="${project.github}" class="project-link" target="_blank" rel="noopener noreferrer" title="View on GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="${project.website !== '#' ? project.website : project.github}" class="project-link" target="_blank" rel="noopener noreferrer" title="${project.website !== '#' ? 'View Live Demo' : 'View on GitHub'}">
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
             </div>
         `;
         
-        projectCard.addEventListener('click', () => {
+        // Add click event to the card
+        projectCard.addEventListener('click', (e) => {
+            // Prevent default navigation and stop propagation
+            e.preventDefault();
+            e.stopPropagation();
+            
+            // If the click is on a link, let it handle the click
+            if (e.target.tagName === 'A' || e.target.closest('a')) {
+                return;
+            }
+            // Otherwise, open the modal
             openProjectModal(index);
+            
+            // Prevent any default behavior that might cause navigation
+            return false;
+        });
+        
+        // Make sure links don't trigger the card click and handle navigation properly
+        const links = projectCard.querySelectorAll('a');
+        links.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.stopPropagation();
+                // Only prevent default if it's a '#' link
+                if (link.getAttribute('href') === '#') {
+                    e.preventDefault();
+                    return false;
+                }
+                // For other links, allow default navigation
+            });
         });
         
         projectsGrid.appendChild(projectCard);

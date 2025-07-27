@@ -2,7 +2,6 @@
   "personal": {
     "name": "Tarun Nandigam",
     "title": "Computer Science Engineering Student",
-    "education": "BTech CSE - 3rd Year",
     "location": "India",
     "timezone": "IST (GMT+5:30)",
     "email": "tarun.nandigam@example.com",
@@ -11,6 +10,101 @@
     "leetcode": "https://leetcode.com/u/tarunnandigam29/",
     "credly": "https://www.credly.com/users/nandigam-tarun"
   },
+  "education": [
+    {
+      "degree": "Bachelor of Technology in Computer Science and Engineering",
+      "institution": "Lovely Professional University",
+      "duration": "2023 - 2027",
+      "description": "pursuing carrer in Cloud computing Domain with a new Technologies",
+      "highlights": [
+        "Data Structures",
+        "Cloud Computing",
+        "Devops"
+      ]
+    },
+    {
+      "degree": "Higher Secondary (12th)",
+      "institution": "Sri Chaitanya College",
+      "duration": "2021 - 2023",
+      "description": "Developed strong foundation in core subjects and participated in various extracurricular activities including sports and science club.",
+      "highlights": [
+        "Physics",
+        "Chemistry",
+        "Mathematics"
+      ]
+    },
+    {
+      "degree": "Secondary School (10th)",
+      "institution": "Sri Chaitanya School",
+      "duration": "2020 - 2021",
+      "description": "Developed strong foundation in core subjects and participated in various extracurricular activities including sports and science club.",
+      "highlights": [
+        "Science",
+        "Mathematics",
+        "English"
+      ]
+    }
+  ],
+  "achievements": [
+    {
+      "title": "Google Developer Profile",
+      "issuer": "Google",
+      "skills": ["Certifications", "Achievements", "Developer Profile"],
+      "description": "My code has been preserved in the GitHub Arctic Code Vault, and you can explore all my achievements and contributions on my Google Developer Profile.",
+      "link": "https://g.dev/tarunnandigam"
+    },
+    {
+      "title": "Object-Oriented Programming with C++",
+      "issuer": "Lovely Professional University 🗙 Neo colab",
+      "date": "2024",
+      "skills": ["C++", "OOP Concepts", "Data Structures"],
+      "description": "Comprehensive certification in object-oriented programming principles and their implementation in C++."
+    },
+    {
+      "title": "AWS Cloud Foundation",
+      "issuer": "Amazon Web Services",
+      "date": "December 2025",
+      "skills": ["Cloud Computing", "AWS Services"]
+    },
+    {
+      "title": "Java Programming Certificate",
+      "issuer": "Lovely Professional University 🗙 Neo colab",
+      "date": "2025",
+      "skills": ["Java", "Object-Oriented Programming", "Logic Building"]
+    }
+  ],
+  "projects": [
+    {
+      "id": 0,
+      "title": "HavenCraft",
+      "description": "Handmade crafts marketplace with user accounts, shopping cart, wishlist, and secure payments.",
+      "technologies": ["HTML5", "JavaScript", "Python"],
+      "github_url": "https://github.com/tarunnandigam/heavencraft.git",
+      "live_url": "https://heavencraft.onrender.com",
+      "featured": true,
+      "icon": "fas fa-shopping-cart"
+    },
+    {
+      "id": 1,
+      "title": "PageControl",
+      "description": "An educational memory management simulator demonstrating page replacement algorithms with interactive visualization.",
+      "technologies": ["Python", "Algorithms", "Operating system"],
+      "github_url": "https://github.com/tarunnandigam/memory-management-simulator.git",
+      "live_url": "https://github.com/tarunnandigam/memory-management-simulator",
+      "featured": true,
+      "icon": "fas fa-memory"
+    },
+    {
+      "id": 2,
+      "title": "TravelVax",
+      "description": "Travel vaccine recommendation system with personalized health advice and AI-powered assistance.",
+      "technologies": ["HTML5", "CSS3", "JavaScript"],
+      "github_url": "#",
+      "live_url": "#",
+      "featured": true,
+      "icon": "fas fa-plane-departure"
+    }
+  ],
   "skills": {
     "programming_languages": [
       {
@@ -19,22 +113,10 @@
         "proficiency": "Advanced"
       },
       {
-        "name": "Java",
-        "icon": "fab fa-java",
-        "proficiency": "Intermediate"
-      },
-      {
         "name": "JavaScript",
         "icon": "fab fa-js-square",
         "proficiency": "Advanced"
       },
-      {
-        "name": "C++",
-        "icon": "fas fa-code",
-        "proficiency": "Intermediate"
-      }
-    ],
-    "web_technologies": [
       {
         "name": "HTML5",
         "icon": "fab fa-html5",
@@ -46,83 +128,54 @@
         "proficiency": "Advanced"
       },
       {
-        "name": "React",
-        "icon": "fab fa-react",
+        "name": "Java",
+        "icon": "fab fa-java",
         "proficiency": "Intermediate"
       },
       {
-        "name": "Node.js",
-        "icon": "fab fa-node-js",
-        "proficiency": "Intermediate"
-      }
-    ],
-    "tools_databases": [
-      {
-        "name": "Git",
-        "icon": "fab fa-git-alt",
-        "proficiency": "Advanced"
-      },
-      {
-        "name": "MySQL",
+        "name": "SQL",
         "icon": "fas fa-database",
         "proficiency": "Intermediate"
       },
       {
+        "name": "C++",
+        "icon": "fas fa-code",
+        "proficiency": "Intermediate"
+      }
+    ],
+    "technologies": [
+      {
+        "name": "React",
+        "icon": "fab fa-react"
+      },
+      {
+        "name": "Node.js",
+        "icon": "fab fa-node-js"
+      },
+      {
+        "name": "Git",
+        "icon": "fab fa-git-alt"
+      },
+      {
         "name": "Docker",
-        "icon": "fab fa-docker",
-        "proficiency": "Beginner"
+        "icon": "fab fa-docker"
       },
       {
         "name": "Linux",
-        "icon": "fab fa-linux",
-        "proficiency": "Intermediate"
+        "icon": "fab fa-linux"
+      },
+      {
+        "name": "AWS",
+        "icon": "fab fa-aws"
+      },
+      {
+        "name": "TensorFlow",
+        "icon": "fas fa-brain"
+      },
+      {
+        "name": "Flask",
+        "icon": "fas fa-flask"
       }
     ]
-  },
-  "projects": [
-    {
-      "id": 1,
-      "title": "E-Commerce Platform",
-      "description": "Full-stack e-commerce solution with user authentication, product catalog, and payment integration.",
-      "icon": "fas fa-shopping-cart",
-      "technologies": ["React", "Node.js", "MongoDB"],
-      "github_url": "https://github.com/tarunnandigam/ecommerce-platform",
-      "live_url": "https://tarun-ecommerce.herokuapp.com",
-      "featured": true
-    },
-    {
-      "id": 2,
-      "title": "AI Chatbot Assistant",
-      "description": "Intelligent chatbot using natural language processing for customer support automation.",
-      "icon": "fas fa-robot",
-      "technologies": ["Python", "TensorFlow", "Flask"],
-      "github_url": "https://github.com/tarunnandigam/ai-chatbot",
-      "live_url": "https://tarun-chatbot.herokuapp.com",
-      "featured": true
-    },
-    {
-      "id": 3,
-      "title": "Task Management System",
-      "description": "Collaborative project management tool with real-time updates and team collaboration features.",
-      "icon": "fas fa-tasks",
-      "technologies": ["Vue.js", "Express", "Socket.io"],
-      "github_url": "https://github.com/tarunnandigam/task-manager",
-      "live_url": "https://tarun-taskmanager.herokuapp.com",
-      "featured": true
-    }
-  ],
-  "education": [
-    {
-      "degree": "Bachelor of Technology",
-      "field": "Computer Science Engineering",
-      "status": "Currently in 3rd Year",
-      "description": "Pursuing comprehensive education in computer science fundamentals, including data structures, algorithms, software engineering, and modern web technologies.",
-      "highlights": [
-        "Data Structures & Algorithms",
-        "Object-Oriented Programming",
-        "Database Management Systems",
-        "Web Development"
-      ]
-    }
-  ]
+  }
 }

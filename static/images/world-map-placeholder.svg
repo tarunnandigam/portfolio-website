@@ -1,7 +1,0 @@
-<svg width="200" height="100" viewBox="0 0 200 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="200" height="100" fill="#f5f2ed"/>
-  <!-- Simplified world map outline -->
-  <path d="M20 30 L40 25 L60 35 L80 30 L100 40 L120 35 L140 45 L160 40 L180 50 L180 70 L160 65 L140 70 L120 65 L100 70 L80 65 L60 70 L40 65 L20 70 Z" fill="#2c2c2c" opacity="0.3"/>
-  <circle cx="140" cy="45" r="3" fill="#4f46e5"/>
-  <text x="100" y="90" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" fill="#555555">India</text>
-</svg>
